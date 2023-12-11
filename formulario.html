@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>
+</title>
+<script>
+function alerta(){
+ alert("cadastro realizado com sucesso");
+}
+</script>
+<body text="black" background='ceu.jpg'>
+<center>Cadastro Pessoal<br><p>
+<form action=""method=""name="form">
+<center>Nome completo:
+<input type="text"name="nome"placeholder="Digite aqui"/><br><p>
+Data de nascimento:
+<input type="date"name="data"/><br><p>
+Sexo:
+<input type="radio"name="Sexo"/> Masculino
+<input type="radio"name="Sexo"/> Feminio<br><p>
+Senha:
+<input type="passoword"name="senha"placeholder="Digite aqui"/><br>
+<small>Mínimo de 8 caracteres</small><br><p>
+Confirme a senha:
+<input type="passoword"name="senha"placeholder="Digite aqui"/><br><p>
+E-mail:
+<input type="email" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/><br><p>
+Telefone:
+<input type="tel" required="required" maxlength="15" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" /><br><p>
+Nacionalidade:
+<select name="my_html_select_box"><br><p>
+<option selected="yes">selecione aqui</option><br><p>
+<option>Cubano</option>
+<option>Brasileiro</option>
+<option>Argentino</option>
+<option>Japones</option>
+<option>Chinês</option>
+<option>Russo</option>
+<input type="submit" onclick="alert();"value="Enviar"/>
+</form>
+</body>
+</head>
+</html>

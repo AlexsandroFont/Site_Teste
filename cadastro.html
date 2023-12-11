@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title> Wiki horror </title>
+    	<meta name="description" content="Sinopses dos seus fimes de terror e suspense favoritos.">
+    	<meta name="robots" content="index, follow">
+    	<link rel="stylesheet" href="css/style.css">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?">
+    	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    	<link rel="icon" href="img/icon.png">
+    </head>
+    <body>
+        <!-- CABEÇALHO --> 
+        <header class="cabecalho container">
+           <a href="home.html"><h1 class="logo"> Wiki horror </h1></a>
+           <button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
+           <nav class="menu">
+               <a class="btn-close"><i class="fa fa-times"></i></a>
+               <ul>
+                   <li><a href="home.html">Pagina Inicial</a></li>
+                   <li><a href="filme.html">Filmes</a></li>
+                   <li><a href="lancamentos.html">Lançamentos</a></li>
+                   <li><a href="contato.html">Contato</a></li>
+                   <li><a href="cadastro.html">Cadastro</a></li>
+                   <li><a href="galeria.html">Galeria</a></li>
+               </ul>
+           </nav>          
+        </header>
+        <!-- BANNER --> 
+        <div class="banner container">
+            <div class="title">
+                <h2> Cadastre-se e gganhe vantagens no nosso site </h2>
+            </div>
+        </div>
+		<!-- FORMULÁRIO -->
+<script>
+function alerta(){
+ alert("Cadastro realizado com sucesso");
+}
+</script>
+<body text="black">
+<form action=""method=""name="form">
+<div class="form">
+<center>Cadastro Pessoal<br><p>
+<center>Nome completo:
+<input type="text"name="nome"placeholder="Digite aqui"/><br><p>
+Data de nascimento:
+<input type="date"name="data"/><br><p>
+Sexo:
+<input type="radio"name="Sexo"/> Masculino
+<input type="radio"name="Sexo"/> Feminio<br><p>
+Senha:
+<input type="passoword"name="senha"placeholder="Digite aqui"/><br>
+<small>Mínimo de 8 caracteres</small><br><p>
+Confirme a senha:
+<input type="passoword"name="senha"placeholder="Digite aqui"/><br><p>
+E-mail:
+<input type="email" required="required" class="input-text" name="email"placeholder="nome@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/><br><p>
+Telefone:
+<input type="tel" required="required" maxlength="15" name="phone"placeholder="Número de telefone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" /><br><p>
+Nacionalidade:
+<select name="my_html_select_box"><br><p>
+<option selected="yes">selecione aqui</option><br><p>
+<option>Cubano</option>
+<option>Brasileiro</option>
+<option>Argentino</option>
+<option>Japones</option>
+<option>Chinês</option>
+<option>Russo</option>
+<input type="submit" onclick="alert();"value="Enviar"/>
+</form>
+</div>
+        <!-- RODAPÉ -->
+        <footer class="rodape container bg-gradient">
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+          </div>
+          <p class="copyright">
+            Copyright © Wiki Horror 2017. Todos os direitos reservados.
+        </footer>       
+        
+        <!-- JQUERY --> 
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+        $(".btn-menu").click(function(){
+          $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+          $(".menu").hide();
+        });
+        </script>      
+    </body>
+</html>
